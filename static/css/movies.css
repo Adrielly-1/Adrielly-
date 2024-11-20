@@ -1,0 +1,213 @@
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#recommended-movies .row {
+    margin-top: 20px;
+}
+
+#three-movies ul {
+    margin-top: 20px;
+}
+
+.search-wrapper {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-image: url('https://i1.wp.com/www.usc.edu.br/circulodigital/wp-content/uploads/2018/10/filme_at%C3%A9_o_%C3%BAltimo_homem-864x400_c.jpg?fit=864%2C400');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.search-container {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+.search-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(12, 12, 12, 0.8);
+    z-index: 1;
+}
+
+.second-image {
+    position: relative;
+    width: 90%;
+    height: 80%;
+    background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiaLxcTE3r9i_YIyQ_ALRUQAhUuyM5FnFdfALksIjM628FqqI4Hwwz9AKCUG2jcS5M-tE94lQhsxoz1yNb0_Jw9-m6_NooQnU_n40ilQ48WvVb9OIhDC_CjpiqFCopB_wafJbe_sEc20pw/s1600/hacksaw-ridge-Final-Poster_C-1200x678.jpg');
+    background-size: cover;
+    background-position: center center;
+    border-radius: 15px;
+    margin: 5px;
+    z-index: 50;
+}
+
+.search-input {
+    margin-top: 10%;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 500px;
+    padding: 7px;
+    font-size: 17px;
+    border-width: 0;
+    background: #1b1b1b;
+    color: #ffffff;
+    border-radius: 8px;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+}
+
+.search-input::placeholder {
+    color: #545454;
+    opacity: 1;
+    font-size: 15px;
+    text-align: start;
+}
+
+.search-input:focus {
+    background: #1b1b1b;
+    color: #ffffff;
+    outline: none;
+}
+
+@media (max-width: 768px) {
+    .search-wrapper {
+        height: 200px;
+        background-position: center center;
+    }
+}
+
+@media (max-width: 576px) {
+    .search-wrapper {
+        height: 150px;
+    }
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-body {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.card-title {
+    font-size: 16px;
+    color: white;
+}
+
+#recommended-movies .row {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow-x: auto;
+    gap: 10px;
+    padding-bottom: 15px;
+}
+
+.col {
+    flex: 0 0 auto;
+    width: 150px;
+}
+
+#recommended-movies .row::-webkit-scrollbar {
+    height: 8px;
+}
+
+#recommended-movies .row::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 10px;
+}
+
+
+.card-text {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.other-card {
+    background-color: #121212;
+}
+
+.list-group-item {
+    background-color: #1b1b1b;
+    color: #e0e0e0;
+    border: none;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.other-card {
+    background-color: #121212;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.other-title {
+    color: #e0e0e0;
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.movie-card, .other-card {
+    cursor: pointer;
+    display: block;
+}
+
+.movie-card img, .other-card img {
+    width: 100%;
+    height: auto;
+}
+
+.movie-card:hover, .other-card:hover {
+    background-color: #1b1b1b;
+}
+
+.logout-button {
+    z-index: 100;
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    height: 5px;
+    width: 5px;
+    margin-right: 30px;
+}
